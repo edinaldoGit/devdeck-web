@@ -1,17 +1,12 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "Esta pasta deve conter os arquivos referentes ao backend da aplicação que devem ser escritos usando NodeJs + Express.",
-  "main": "index.js",
+  "description": "Backend da aplicação DevDeck",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "bcryptjs": "^3.0.3",
     "cors": "^2.8.5",
