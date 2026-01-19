@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      const redirectTo = location.pathname
+        .replace('/devdeck-web', '')
+        .replace(/\/$/, '');
+
+      location.replace('/devdeck-web/?redirect=' + redirectTo);
+    </script>
+  </head>
+  <body></body>
+</html>
