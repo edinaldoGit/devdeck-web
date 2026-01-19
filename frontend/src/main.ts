@@ -9,6 +9,11 @@ import router from './router'
 const app = createApp(App)
 
 app.use(createPinia())
-app.use(router)
 
+const redirect = new URLSearchParams(window.location.search).get('redirect')
+if (redirect) {
+  router.replace(redirect)
+}
+
+app.use(router)
 app.mount('#app')
